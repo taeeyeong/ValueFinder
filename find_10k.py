@@ -160,7 +160,9 @@ def batch_download_10k(
     return results
 
 if __name__ == "__main__":
-    res = batch_download_10k(["NVDA", "MSFT", "TSLA", "ONON", "AMZN", "TSM", "GOOG", "NKE"], "./SEC_10K")
+    # res = batch_download_10k(["NVDA", "MSFT", "TSLA", "ONON", "AMZN", "TSM", "GOOG", "NKE"], "./SEC_10K")
+    res = batch_download_10k(["LRCX", "SOXX", "IAUM", "TEM", "PLTR", "BRK.B"], "./SEC_10K")
+    
 
     # 예시 2) 문자열로도 가능
     # res = batch_download_10k("NVDA, MSFT TSLA", "./SEC_10K", make_subfolder_per_ticker=False)
